@@ -1,0 +1,14 @@
+# pnpm
+.pnpm-store
+
+# pnpm lockfile
+pnpm-lock.yaml
+
+# deps
+node_modules
+
+# next
+**/.next
+
+# storybook build
+**/*-storybook-static

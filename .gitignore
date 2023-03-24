@@ -1,0 +1,15 @@
+# pnpm
+.pnpm-store
+
+# deps
+node_modules
+
+# next
+**/.next
+
+# env files
+.env
+.env.*local
+
+# storybook
+**/web-storybook-static

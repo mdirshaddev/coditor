@@ -1,0 +1,28 @@
+{
+  "name": "mdirshaddev.com",
+  "homepage": "https://mdirshaddev.vercel.app",
+  "description": "My Personal Website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier -c .",
+    "format:write": "prettier -w ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev+github@gmail.com",
+    "url": "https://mdirshaddev.vercel.app"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/format": "^17.4.4",
+    "@commitlint/types": "^17.4.4",
+    "@types/node": "18.0.3",
+    "husky": "^8.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4"
+  }
+}

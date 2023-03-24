@@ -1,0 +1,3 @@
+packages:
+  - 'apps/*' # mainline web application
+  - 'packages/*' # sharable code

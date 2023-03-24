@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Linting your commit message before committing 👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
+npx --no -- commitlint --edit $1
+
+echo '🎉 No lint error found: committing this now.... ✨🚀🏄‍♂️🍻'
