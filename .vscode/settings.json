@@ -8,6 +8,7 @@
   // Files
   "files.eol": "\n",
   "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
   "files.enableTrash": true,
   "files.exclude": {
     "**/.git": false,
@@ -16,9 +17,9 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/node_modules": false,
-    "**/.next": false,
-    "**/.pnpm-store": false
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.pnpm-store": true
   },
   // Git graph
   "git-graph.date.format": "Date & Time",
@@ -89,5 +90,5 @@
     "editor.tabSize": 2
   },
   "tailwindCSS.validate": true,
-  "css.validate": false // to disable lint error for scss nesting feature
+  "css.validate": false
 }
