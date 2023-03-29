@@ -1,0 +1,20 @@
+# deps
+node_modules
+
+
+# pnpm
+.pnpm-store
+
+# next
+**/.next
+
+# env files
+.env
+.env.*
+.env.*local
+
+# storybook
+**/web-storybook-static
+
+# Sentry
+.sentryclirc
