@@ -4,16 +4,16 @@
 echo '🏗️👷 Checking your project before committing 👷‍♂️🏗️'
 echo 'please be patient, this may take a while...'
 
-echo 'Running prettier format'
+echo 'Running Web prettier format'
 # Checking prettier formatting
-pnpm run format ||
+pnpm --filter web format ||
 (
   echo '🔨❌ Yoo, you have a problem in your code. Check Prettier 🔨❌
     Run pnpm run format, add changes and try commit again.';
   false;
 )
 
-echo 'Running Storybook build'
+echo 'Running Web Storybook build'
 pnpm --filter web build-storybook ||
 (
   echo '🔨❌ Yoo, you have a problem in your stories or react code. Check Build 🔨❌
