@@ -1,7 +1,7 @@
 export default function Page() {
   return (
-    <div className='flex flex-col items-center justify-center w-full h-screen'>
-      <h1 className='select-none cursor-grab hover:underline'>
+    <div className='flex h-screen w-full flex-col items-center justify-center'>
+      <h1 className='cursor-grab select-none hover:underline'>
         My personal monorepo based website
       </h1>
     </div>
