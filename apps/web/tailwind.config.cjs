@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   corePlugins: {
     preflight: false
   },
@@ -8,5 +8,5 @@ module.exports = {
   theme: {
     extend: {}
   },
-  plugins: [require('prettier-plugin-tailwindcss')]
+  plugins: []
 };
