@@ -2,7 +2,7 @@
 
 import {
   experimental_extendTheme as extendTheme,
-  Experimental_CssVarsProvider as CssVarsProvider,
+  Experimental_CssVarsProvider as CssVarsProvider
 } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { getDesignTokens } from './getDesignTokens';
@@ -15,19 +15,19 @@ export const theme = extendTheme({
   cssVarPrefix: 'me',
   colorSchemes: {
     light: {
-      palette: lightPalette,
+      palette: lightPalette
     },
     dark: {
-      palette: darkPalette,
-    },
+      palette: darkPalette
+    }
   },
   components: {
     MuiCssBaseline: {
       defaultProps: {
-        enableColorScheme: true,
-      },
-    },
-  },
+        enableColorScheme: true
+      }
+    }
+  }
 });
 
 export function BrandingCssVarsProvider(props: React.PropsWithChildren) {
@@ -35,9 +35,8 @@ export function BrandingCssVarsProvider(props: React.PropsWithChildren) {
   return (
     <CssVarsProvider
       theme={theme}
-      defaultMode="system"
-      disableTransitionOnChange
-    >
+      defaultMode='system'
+      disableTransitionOnChange>
       {children}
       <CssBaseline />
       <ColorSchemeScript />

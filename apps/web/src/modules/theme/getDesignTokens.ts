@@ -7,8 +7,8 @@ export const getDesignTokens = (mode: 'light' | 'dark') =>
       mode,
       ...(mode === 'dark' && {
         background: {
-          default: '#000e1c',
-        },
-      }),
-    },
+          default: '#000e1c'
+        }
+      })
+    }
   } as ThemeOptions);

@@ -9,7 +9,7 @@ import { Fragment, memo } from 'react';
  */
 // eslint-disable-next-line react/display-name
 const ColorSchemeScript = memo(
-  (props) => {
+  props => {
     /**
      * This script renders before the react tree is added to browser
      * with this i can toggle theme mode before the component uses the tailwind styles
@@ -40,15 +40,15 @@ const ColorSchemeScript = memo(
     return (
       <Fragment>
         <script
-          id="color-scheme-hydration"
+          id='color-scheme-hydration'
           dangerouslySetInnerHTML={{
-            __html: scriptSrc,
+            __html: scriptSrc
           }}
         />
       </Fragment>
     );
   },
-  () => true,
+  () => true
 );
 
 export { ColorSchemeScript };
