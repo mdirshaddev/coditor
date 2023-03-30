@@ -4,7 +4,7 @@
 
 We will update soon related to the security policy once our web app is available
 
-<!-- 
+<!--
 
 The versions of the project that are currently supported with security updates.
 
