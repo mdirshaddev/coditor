@@ -37,13 +37,30 @@ const Configuration: UserConfig = {
         'icons',
         'bgimages',
         'videos',
-      ],
-    ],
+        'git',
+        'ignore',
+        'format',
+        'test',
+        'e2e-test',
+        'warn',
+        'utils',
+        'renovate',
+        'actions',
+        'worfklows',
+        'changelog',
+        'integration',
+        'security',
+        'watch',
+        'patch',
+        'major',
+        'minor'
+      ]
+    ]
   },
   /*
    * Functions that return true if commitlint should ignore the given message.
    */
-  ignores: [(commit) => commit === ''],
+  ignores: [commit => commit === ''],
   /*
    * Whether commitlint uses the default ignore rules.
    */
@@ -60,10 +77,10 @@ const Configuration: UserConfig = {
     messages: {},
     questions: {
       type: {
-        description: 'please input type:',
-      },
-    },
-  },
+        description: 'please input type:'
+      }
+    }
+  }
 };
 
 module.exports = Configuration;
