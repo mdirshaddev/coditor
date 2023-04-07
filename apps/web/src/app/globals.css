@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   *,
   *::before,
   *::after {
@@ -15,10 +19,16 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
     text-rendering: optimizeLegibility;
     text-decoration: none;
     list-style: none;
-    overscroll-behavior: none;
+  }
+
+  img,
+  video,
+  audio {
+    max-width: 100%;
+    vertical-align: middle;
   }
 }
