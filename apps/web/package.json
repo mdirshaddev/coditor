@@ -17,7 +17,7 @@
     "format:write": "prettier -w .",
     "clean": "rm -rf node_modules .next",
     "storybook": "storybook dev -p 6006 --no-open",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build --output-dir web-storybook-static"
   },
   "keywords": [
     "next",
@@ -39,13 +39,14 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
     "@mui/styles": "^5.11.13",
     "@mui/system": "^5.11.14",
-    "@next/font": "^13.2.4",
+    "@mui/utils": "^5.11.13",
     "@react-three/drei": "^9.58.4",
     "@react-three/fiber": "^8.12.0",
     "@react-three/postprocessing": "^2.7.0",
@@ -57,6 +58,7 @@
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
     "sharp": "^0.32.0",
+    "styled-jsx": "^5.1.2",
     "three": "^0.150.1",
     "zustand": "^4.3.6"
   },
@@ -82,6 +84,7 @@
     "date-fns": "^2.29.3",
     "esbuild": "^0.17.12",
     "eslint": "^8.36.0",
+    "eslint-config-next": "^13.2.4",
     "eslint-plugin-storybook": "^0.6.11",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^9.2.1",

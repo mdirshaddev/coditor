@@ -1,4 +1,5 @@
 import { join } from 'path';
+import pkg from './package.json' assert { type: 'json' };
 
 import { withSentryConfig } from '@sentry/nextjs';
 
@@ -24,6 +25,18 @@ const nextConfig = {
   },
   typescript: {
     tsconfigPath: getTsConfigPath()
+  },
+  transpilePackages: [
+    '@mui/system',
+    '@mui/material',
+    '@mui/icons-material',
+    '@mui/styles',
+    '@mui/utils'
+  ],
+  modularizeImports: {
+    '@mui/icons-material/?(((\\w*)?/?)*)': {
+      transform: '@mui/icons-material/{{ matches.[1] }}/{{member}}'
+    }
   },
   images: {
     domains: ['github.githubassets.com']
