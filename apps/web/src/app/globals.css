@@ -12,10 +12,6 @@
   *::after {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -25,10 +21,7 @@
     list-style: none;
   }
 
-  img,
-  video,
-  audio {
-    max-width: 100%;
-    vertical-align: middle;
+  body {
+    @apply bg-white text-black transition-colors dark:bg-dark dark:text-white;
   }
 }
