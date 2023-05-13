@@ -1,3 +1,4 @@
+import { join } from 'path';
 import type { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
@@ -11,7 +12,11 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: '@storybook/nextjs',
-    options: {}
+    options: {
+      strictMode: true,
+      fastRefresh: true,
+      nextConfigPath: join(__dirname, '../next.config.mjs')
+    }
   }
 };
 
