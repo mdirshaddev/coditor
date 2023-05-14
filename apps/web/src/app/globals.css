@@ -24,4 +24,8 @@
   body {
     @apply bg-white text-black transition-colors dark:bg-dark dark:text-white;
   }
+
+  button:focus-visible {
+    outline: none;
+  }
 }

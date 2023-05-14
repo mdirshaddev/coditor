@@ -1,6 +1,8 @@
 # deps
 node_modules
 
+# terraform
+**/.terraform
 
 # pnpm
 .pnpm-store
@@ -18,3 +20,6 @@ node_modules
 
 # Sentry
 .sentryclirc
+
+# graphql-codegen generated
+**/generated
