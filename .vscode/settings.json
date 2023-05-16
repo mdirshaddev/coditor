@@ -90,25 +90,5 @@
     "editor.tabSize": 2
   },
   "tailwindCSS.validate": true,
-  "css.validate": false,
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#512da1",
-    "activityBar.background": "#512da1",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#190d07",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "commandCenter.border": "#e7e7e799",
-    "sash.hoverBorder": "#512da1",
-    "statusBar.background": "#3d2279",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#512da1",
-    "statusBarItem.remoteBackground": "#3d2279",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "titleBar.activeBackground": "#3d2279",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#3d227999",
-    "titleBar.inactiveForeground": "#e7e7e799"
-  },
-  "peacock.color": "#3d2279"
+  "css.validate": false
 }
