@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
   content: ['./src/**/*.{ts,tsx}', './src/**/*.stories.{ts,tsx}'],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
