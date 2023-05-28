@@ -10,7 +10,9 @@ const tailwindConfig = {
         'touch-device': { raw: '(hover: none)' },
         'touch-no-animation': { raw: '(prefers-reduced-motion)' }
       },
-      colors: {},
+      colors: {
+        dark: '#161c24'
+      },
       backgroundImage: {},
       boxShadow: {},
       translate: {},
