@@ -43,6 +43,7 @@ importers:
       '@graphql-codegen/typescript-react-query': ^4.1.0
       '@headlessui/react': ^1.7.14
       '@nivo/pie': ^0.80.0
+      '@prisma/client': ^4.14.1
       '@react-three/drei': ^9.68.3
       '@react-three/fiber': ^8.13.0
       '@react-three/postprocessing': ^2.11.4
@@ -69,6 +70,7 @@ importers:
       '@types/three': ^0.149.0
       '@xstate/react': ^3.2.2
       autoprefixer: ^10.4.14
+      axios: ^1.4.0
       clsx: ^1.2.1
       colors: ^1.4.0
       console-log-colors: ^0.4.0
@@ -90,6 +92,7 @@ importers:
       postcss-loader: ^7.3.0
       prettier: ^2.8.8
       prettier-plugin-tailwindcss: ^0.2.8
+      prisma: ^4.14.1
       radial: ^0.0.1
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -119,6 +122,7 @@ importers:
       '@giscus/react': 2.2.8_biqbaboplfbrettd7655fr4n2y
       '@headlessui/react': 1.7.14_biqbaboplfbrettd7655fr4n2y
       '@nivo/pie': 0.80.0_biqbaboplfbrettd7655fr4n2y
+      '@prisma/client': 4.14.1_prisma@4.14.1
       '@react-three/drei': 9.68.3_bfjzmtwckb6rsywhvlejmlof3q
       '@react-three/fiber': 8.13.0_73epb4osyabtjyiaeamriercbi
       '@react-three/postprocessing': 2.11.4_qfnsxip3n3hzq77gxou5ky4vxa
@@ -126,6 +130,7 @@ importers:
       '@tanstack/react-query': 4.29.7_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-devtools': 4.29.7_rj5w6kms7jpdvm2o5bkb5pclni
       '@xstate/react': 3.2.2_crl4bbs6ia22clawduwlqcqowm
+      axios: 1.4.0
       clsx: 1.2.1
       encoding: 0.1.13
       framer-motion: 10.12.12_biqbaboplfbrettd7655fr4n2y
@@ -186,6 +191,7 @@ importers:
       postcss-loader: 7.3.0_postcss@8.4.23
       prettier: 2.8.8
       prettier-plugin-tailwindcss: 0.2.8_prettier@2.8.8
+      prisma: 4.14.1
       reading-time: 1.5.0
       rehype-autolink-headings: 6.1.1
       rehype-prism-plus: 1.5.1
@@ -4099,6 +4105,28 @@ packages:
       webpack: 5.83.1_esbuild@0.12.29
     dev: true
 
+  /@prisma/client/4.14.1_prisma@4.14.1:
+    resolution: {integrity: sha512-TZIswkeX1ccsHG/eN2kICzg/csXll0osK3EHu1QKd8VJ3XLcXozbNELKkCNfsCUvKJAwPdDtFCzF+O+raIVldw==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c
+      prisma: 4.14.1
+    dev: false
+
+  /@prisma/engines-version/4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c:
+    resolution: {integrity: sha512-3jum8/YSudeSN0zGW5qkpz+wAN2V/NYCQ+BPjvHYDfWatLWlQkqy99toX0GysDeaUoBIJg1vaz2yKqiA3CFcQw==}
+    dev: false
+
+  /@prisma/engines/4.14.1:
+    resolution: {integrity: sha512-APqFddPVHYmWNKqc+5J5SqrLFfOghKOLZxobmguDUacxOwdEutLsbXPVhNnpFDmuQWQFbXmrTTPoRrrF6B1MWA==}
+    requiresBuild: true
+
   /@react-spring/animated/9.4.5_react@18.2.0:
     resolution: {integrity: sha512-KWqrtvJSMx6Fj9nMJkhTwM9r6LIriExDRV6YHZV9HKQsaolUFppgkOXpC+rsL1JEtEvKv6EkLLmSqHTnuYjiIA==}
     peerDependencies:
@@ -6771,6 +6799,16 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /axios/1.4.0:
+    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /axobject-query/3.1.1:
     resolution: {integrity: sha512-goKlv8DZrK9hUh975fnHzhNIO4jUnFCfv/dszV5VwUGDFjI6vQ2VwoyjYjYNEbBE8AH87TduWP5uyDR1D+Iteg==}
     dependencies:
@@ -9203,6 +9241,16 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
+  /follow-redirects/1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
   /for-each/0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
@@ -9251,6 +9299,15 @@ packages:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.35
+
+  /form-data/4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: false
 
   /format/0.2.2:
     resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
@@ -12896,6 +12953,14 @@ packages:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
     dev: true
+
+  /prisma/4.14.1:
+    resolution: {integrity: sha512-z6hxzTMYqT9SIKlzD08dhzsLUpxjFKKsLpp5/kBDnSqiOjtUyyl/dC5tzxLcOa3jkEHQ8+RpB/fE3w8bgNP51g==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.14.1
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}

@@ -18,7 +18,10 @@
     "clean": "rm -rf node_modules .next",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build --output-dir web-storybook-static",
-    "codegen": "graphql-codegen codegen"
+    "codegen": "graphql-codegen codegen",
+    "prisma:init": "prisma init",
+    "prisma:migrate": "prisma migrate db push",
+    "prisma:generate": "prisma generate"
   },
   "keywords": [
     "next",
@@ -43,6 +46,7 @@
     "@giscus/react": "^2.2.8",
     "@headlessui/react": "^1.7.14",
     "@nivo/pie": "^0.80.0",
+    "@prisma/client": "^4.14.1",
     "@react-three/drei": "^9.68.3",
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.11.4",
@@ -50,6 +54,7 @@
     "@tanstack/react-query": "^4.29.7",
     "@tanstack/react-query-devtools": "^4.29.7",
     "@xstate/react": "^3.2.2",
+    "axios": "^1.4.0",
     "clsx": "^1.2.1",
     "encoding": "^0.1.13",
     "framer-motion": "^10.12.12",
@@ -111,6 +116,7 @@
     "postcss-loader": "^7.3.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
+    "prisma": "^4.14.1",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-prism-plus": "^1.5.1",

@@ -19,17 +19,15 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     esmExternals: 'loose',
-    mdxRs: true
   },
   typescript: {
     tsconfigPath: getTsConfigPath()
   },
   images: {
     domains: [
-      'avatars.githubusercontent.com',
-      'github.githubassets.com',
-      'www.poppr.be',
-      'i.scdn.co'
+      'avatars.githubusercontent.com', // GitHub Avatars
+      'github.githubassets.com', // Github Assets
+      'i.scdn.co' // Spotify Asset CDN
     ]
   }
 };
