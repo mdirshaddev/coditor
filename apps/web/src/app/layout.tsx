@@ -23,9 +23,7 @@ const roboto = Roboto({
 export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang='en'>
-      <body className={roboto.className}>
-        {children}
-      </body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

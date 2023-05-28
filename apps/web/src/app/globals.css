@@ -22,6 +22,6 @@
   }
 
   body {
-    @apply bg-white dark:bg-dark overflow-hidden transition-colors;
+    @apply overflow-hidden bg-white transition-colors dark:bg-dark;
   }
 }

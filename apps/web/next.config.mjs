@@ -18,7 +18,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    esmExternals: 'loose',
+    esmExternals: 'loose'
   },
   typescript: {
     tsconfigPath: getTsConfigPath()

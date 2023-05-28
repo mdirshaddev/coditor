@@ -82,7 +82,7 @@ declare module NodeJS {
     /**
      * Spotify token URL
      */
-		NEXT_PUBLIC_SPOTIFY_TOKEN_URL: string;
+    NEXT_PUBLIC_SPOTIFY_TOKEN_URL: string;
 
     // Open Weather
     /**
