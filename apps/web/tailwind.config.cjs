@@ -5,9 +5,7 @@ const tailwindConfig = {
   content: ['./src/**/*.{ts,tsx}', './src/**/*.stories.{ts,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {
-      
-    }
+    extend: {}
   },
   plugins: [
     plugin(function ({ addVariant }) {
