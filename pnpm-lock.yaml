@@ -84,7 +84,7 @@ importers:
       eslint-plugin-storybook: ^0.6.12
       framer-motion: ^10.12.12
       graphql: ^16.6.0
-      graphql-request: ^5.2.0
+      graphql-request: ^5.1.0
       gray-matter: ^4.0.3
       mdx-bundler: ^9.2.1
       next: ^13.4.3
@@ -134,7 +134,7 @@ importers:
       clsx: 1.2.1
       encoding: 0.1.13
       framer-motion: 10.12.12_biqbaboplfbrettd7655fr4n2y
-      graphql-request: 5.2.0_rjjjs2nwgns3bcvnnqb5eu5nry
+      graphql-request: 5.1.0_rjjjs2nwgns3bcvnnqb5eu5nry
       next: 13.4.3_biqbaboplfbrettd7655fr4n2y
       radial: 0.0.1
       react: 18.2.0
@@ -9691,8 +9691,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /graphql-request/5.2.0_rjjjs2nwgns3bcvnnqb5eu5nry:
-    resolution: {integrity: sha512-pLhKIvnMyBERL0dtFI3medKqWOz/RhHdcgbZ+hMMIb32mEPa5MJSzS4AuXxfI4sRAu6JVVk5tvXuGfCWl9JYWQ==}
+  /graphql-request/5.1.0_rjjjs2nwgns3bcvnnqb5eu5nry:
+    resolution: {integrity: sha512-0OeRVYigVwIiXhNmqnPDt+JhMzsjinxHE7TVy3Lm6jUzav0guVcL0lfSbi6jVTRAxcbwgyr6yrZioSHxf9gHzw==}
     peerDependencies:
       graphql: 14 - 16
     dependencies:

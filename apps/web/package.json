@@ -58,7 +58,7 @@
     "clsx": "^1.2.1",
     "encoding": "^0.1.13",
     "framer-motion": "^10.12.12",
-    "graphql-request": "^5.2.0",
+    "graphql-request": "^5.1.0",
     "next": "^13.4.3",
     "radial": "^0.0.1",
     "react": "^18.2.0",

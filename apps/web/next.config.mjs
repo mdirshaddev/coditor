@@ -27,7 +27,7 @@ const nextConfig = {
     domains: [
       'avatars.githubusercontent.com', // GitHub Avatars
       'github.githubassets.com', // Github Assets
-      'i.scdn.co' // Spotify Asset CDN
+      'i.scdn.co', // Spotify Asset CDN
     ]
   }
 };

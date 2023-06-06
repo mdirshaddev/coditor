@@ -6,18 +6,7 @@ const tailwindConfig = {
   darkMode: 'class',
   theme: {
     extend: {
-      screens: {
-        'touch-device': { raw: '(hover: none)' },
-        'touch-no-animation': { raw: '(prefers-reduced-motion)' }
-      },
-      colors: {
-        dark: '#161c24'
-      },
-      backgroundImage: {},
-      boxShadow: {},
-      translate: {},
-      animation: {},
-      keyframes: {}
+      
     }
   },
   plugins: [
