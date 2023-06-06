@@ -7,7 +7,7 @@
   "window.commandCenter": true,
   // Files
   "files.eol": "\n",
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "files.autoSaveDelay": 2000,
   "files.enableTrash": true,
   "files.exclude": {

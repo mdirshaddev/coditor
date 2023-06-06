@@ -4,6 +4,9 @@
   "description": "My Personal Website",
   "private": true,
   "scripts": {
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "web:start": "pnpm --filter web start",
     "format": "prettier -c .",
     "format:write": "prettier -w ."
   },
@@ -15,13 +18,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/format": "^17.4.4",
     "@commitlint/types": "^17.4.4",
-    "@types/node": "^18.15.11",
+    "@types/node": "^18.16.13",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "husky": "^8.0.3",
-    "prettier": "^2.8.7",
-    "typescript": "^5.0.2"
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "next": "^13.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

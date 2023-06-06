@@ -1,3 +1,18 @@
+# next
 .next
+
+# pnpm store
 .pnpm-store
+
+# dependencies
 node_modules
+
+# storybook build
+web-storybook-static
+
+# graphql codegen
+**/generated
+
+# terraform
+**/.terraform
+**/*.tfstate

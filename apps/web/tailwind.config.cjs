@@ -1,12 +1,19 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  corePlugins: {
-    preflight: false
-  },
-  important: '#__next',
-  content: ['./src/**/*.{ts,tsx}'],
+const tailwindConfig = {
+  content: ['./src/**/*.{ts,tsx}', './src/**/*.stories.{ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('hocus', ['&:hover', '&:focus']);
+    }),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ]
 };
+
+export default tailwindConfig;

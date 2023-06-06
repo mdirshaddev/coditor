@@ -12,3 +12,11 @@ node_modules
 
 # storybook build
 **/*-storybook-static
+
+**/*.graphql
+
+# apps
+apps
+
+# packages
+packages

@@ -1,3 +1,7 @@
 .next
 .pnpm-store
 node_modules
+tailwind.config.cjs
+**/.terraform
+**/*.tfstate
+**/generated
