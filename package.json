@@ -21,7 +21,7 @@
     "@commitlint/types": "^17.4.4",
     "@types/node": "^18.15.11",
     "husky": "^8.0.3",
-    "prettier": "^2.8.7",
+    "prettier": "^3.0.0",
     "typescript": "^5.0.2"
   }
 }
