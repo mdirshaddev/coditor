@@ -69,7 +69,7 @@
     "@storybook/manager-api": "7.0.0-alpha.54",
     "@storybook/nextjs": "7.0.0-rc.8",
     "@storybook/react": "7.0.0-rc.8",
-    "@storybook/testing-library": "0.0.14-next.1",
+    "@storybook/testing-library": "0.2.2",
     "@storybook/theming": "^6.5.16",
     "@types/node": "^18.15.6",
     "@types/react": "^18.0.28",
